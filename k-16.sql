@@ -56,3 +56,10 @@ INNER JOIN places ON users.id = places.host
 ORDER BY places.id
 
 -- #160306
+SELECT places.title, users.name AS fan
+FROM places
+LEFT JOIN likes
+ON places.id = likes.place
+LEFT JOIN users
+ON users.id = likes.user
+ORDER BY places.title
