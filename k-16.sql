@@ -15,3 +15,6 @@ SELECT * FROM `places` WHERE price >= 80 AND city != 'Samui'
 
 -- #160206
 SELECT id,title,price FROM `places` ORDER BY price
+
+-- #160207
+SELECT * FROM places WHERE title LIKE 'Amazing%' 
