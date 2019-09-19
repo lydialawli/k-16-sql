@@ -18,3 +18,9 @@ SELECT id,title,price FROM `places` ORDER BY price
 
 -- #160207
 SELECT * FROM places WHERE title LIKE 'Amazing%' 
+
+-- #160208
+SELECT id, title AS NAME, price AS AMOUNT, rating 
+FROM `places` 
+WHERE city != 'Phangan' 
+AND price > 40 
