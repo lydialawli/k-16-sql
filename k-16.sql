@@ -72,3 +72,14 @@ ON places.id = likes.place
 INNER JOIN users
 ON users.id = likes.user
 ORDER BY users.name
+
+-- #16030
+SELECT users.name AS fan,  places.title AS place, types.name
+FROM places
+INNER JOIN likes
+ON places.id = likes.place
+INNER JOIN users
+ON users.id = likes.user
+INNER JOIN types
+ON places.type = types.id
+ORDER BY users.name
