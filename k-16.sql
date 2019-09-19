@@ -30,3 +30,9 @@ SELECT * FROM `users` WHERE email LIKE "%gmail%"
 
 -- #160301
 SELECT * FROM places LEFT JOIN types ON places.type = types.id 
+
+-- #160302
+SELECT places.id, places.title, places.price, types.name AS type
+FROM places 
+LEFT JOIN types 
+ON places.type = types.id 
