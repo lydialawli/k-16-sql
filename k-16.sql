@@ -24,3 +24,6 @@ SELECT id, title AS NAME, price AS AMOUNT, rating
 FROM `places` 
 WHERE city != 'Phangan' 
 AND price > 40 
+
+-- #160209
+SELECT * FROM `users` WHERE email LIKE "%gmail%" 
