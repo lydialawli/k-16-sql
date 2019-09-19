@@ -10,3 +10,5 @@ SELECT * FROM `places` WHERE price >= 150
 -- #160204
 SELECT * FROM `places` WHERE city = "Samui"
 
+-- #160205
+SELECT * FROM `places` WHERE price >= 80 AND city != 'Samui' 
