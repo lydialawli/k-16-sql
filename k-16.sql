@@ -44,3 +44,7 @@ LEFT JOIN types ON places.type = types.id
 LEFT JOIN users ON places.host = users.id 
 WHERE price > 40
 
+-- #160304
+SELECT users.name, users.email, places.title, places.rating 
+FROM users
+LEFT JOIN places ON places.host = users.id 
